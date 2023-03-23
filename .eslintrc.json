@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "react-native", "prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {"extensions": [".js", ".jsx", ".tsx"]}
+    ],
+    "react-native/no-color-literals": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-param-reassign": "off",
+    "react/no-unescaped-entities": "off",
+    "no-underscore-dangle": "off",
+    "react/no-array-index-key": "off",
+    "react/require-default-props": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}

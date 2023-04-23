@@ -1,7 +1,7 @@
 import {SafeAreaView, StatusBar, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import Car2 from './Components/Car2';
+import CardComponent from './Components/CardComponent';
 
 const App = () => {
   console.log('Omkar1');
@@ -9,11 +9,8 @@ const App = () => {
     <SafeAreaView>
       <StatusBar barStyle="light-content" backgroundColor={Colors.black} />
       <View style={styles.viewStyles}>
-        <Text style={styles.textStyle}>
-          Hi, Omkar Jadhav here, I am building a Password Generator App using
-          React-Native.
-        </Text>
-        <Car2 />
+        <Text style={styles.textStyle}>Password Generator</Text>
+        <CardComponent />
       </View>
     </SafeAreaView>
   );
@@ -23,14 +20,13 @@ export default App;
 
 const styles = StyleSheet.create({
   textStyle: {
-    color: Colors.white,
-    fontSize: 20,
-    padding: 10,
-    textAlign: 'center',
+    fontSize: 32,
+    fontWeight: '600',
+    marginBottom: 15,
   },
   viewStyles: {
     alignItems: 'center',
-    backgroundColor: Colors.black,
+    backgroundColor: Colors.grey,
     height: '100%',
     justifyContent: 'center',
   },

@@ -4,7 +4,6 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import CardComponent from './Components/CardComponent';
 
 const App = () => {
-  console.log('Omkar1');
   return (
     <SafeAreaView>
       <StatusBar barStyle="light-content" backgroundColor={Colors.black} />
